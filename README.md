@@ -1,0 +1,2 @@
+# nimprj
+basic nim project
