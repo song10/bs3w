@@ -1,0 +1,16 @@
+#? stdtmpl(subsChar = '$', metaChar = '#')
+#proc gen_app_html(app: string, css = "styles.css"): string =
+#  result = ""
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>app</title>
+  <link href="/${css}" rel="stylesheet" type="text/css">
+</head>
+<body id="body" class="site">
+  <div id="ROOT"></div>
+  <script type="text/javascript" src="/${app}.js"></script>
+</body>
+</html>
