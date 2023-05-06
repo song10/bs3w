@@ -7,6 +7,6 @@
 
 import unittest
 
-import nimprjpkg/submodule
+import bs3wpkg/submodule
 test "correct welcome":
   check getWelcomeMessage() == "Hello, World!"

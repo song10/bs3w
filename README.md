@@ -1,2 +1,2 @@
-# nimprj
-basic nim project
+# bs3w
+bs3 wrapper

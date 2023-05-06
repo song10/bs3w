@@ -6,7 +6,7 @@ TODO:
 ]#
 
 
-import nimprjpkg/submodule
+import bs3wpkg/submodule
 import web/ui
 
 import cliche

@@ -6,7 +6,7 @@ description   = "A new awesome nimble package"
 license       = "MIT"
 srcDir        = "src"
 installExt    = @["nim"]
-bin           = @["nimprj"]
+bin           = @["bs3w"]
 skipDirs      = @["spa", "tmpl", "web"]
 
 

@@ -1,2 +1,5 @@
-nimprj
+nimcache/
+nimblecache/
+htmldocs/
+bs3w
 public/*.js
