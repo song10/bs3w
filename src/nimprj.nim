@@ -19,15 +19,24 @@ proc cmd_list(sub: string, long: bool): int =
   result = 0
   let xlong = if long: "-al" else: ""
   let cmd = &"ls {sub} {xlong}"
-  echo cmd
+  echo "+ " & cmd
   result = execCmd(cmd)
 
 proc main: int =
   let args = commandLineParams()
-  args.getOpt (cmd: "help", subcmd: "file", long: false)
+  args.getOpt (
+    cmd: "main command",
+    sub: "sub command",
+    long: false,
+    )
+
+  if cmd == "main command":
+    let app = getAppFilename()
+    quit(execCmd(&"{app} --help"))
+
   case cmd:
   of "list":
-    result = cmd_list(subcmd, long)
+    result = cmd_list(sub, long)
   of "webui":
     result = cmd_webui()
   else:
